@@ -1,0 +1,2005 @@
+<div class="hidden overlay"></div>
+<div class="container">
+  <!--main navigation bar-->
+<header>
+    <div class="topnav" id="myTopnav">
+        <div class="item1"><img href="#home" src="assets/image/chatscrumlogo.png"></div>
+        <div class="item2" id="mytasks">
+            <div id="top"></div>
+            <span id="task1" class="active">My Tasks</span>
+        </div>
+        <div class="item2" id="teamtasks">
+            <span id="task2" routerLink="/teamtaskcards">Team Tasks</span>
+        </div>
+        <div class="item3">
+            <span id="span1">Project</span>
+            <span id="span2">Linnux Jobber</span>
+        </div>
+        <div class="item4">
+            <span id="span1">Sprint 91</span>
+            <span id="span2">Jul 23 - Jul 30</span>
+        </div>
+        <div class="item5">
+            <span id="span1">Slack</span>
+            <img src="assets/image/slack1.png">
+            <span id="span2">Connected</span>
+        </div>
+        <div class="item6">
+            <span id="span1">Theme</span>
+            <span id="span2">Plain</span>
+        </div>
+        <div class="item7">
+            <img src="assets/image/Ellipse-2.png">
+            <span id="span1">Joshua Okwe</span>
+            <span id="span2">Developer</span>
+        </div>
+        <div class="item8">
+            <img id="img1" src="assets/image/help.png">
+            <img id="img2" src="assets/image/power.png">
+        </div>
+        <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a> -->
+    </div>
+</header>
+
+<!-- message drawer -->
+<mat-sidenav-container>
+  <mat-sidenav #sidenav role="navigation">
+    <!--this is a place for us to add side-nav code-->
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!--in here all the content must reside. We will add a navigation header as well-->
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<!-- End of message drawer -->
+<!--The body--->
+<div class="body">
+    <div class="main_wrapper">
+        <div class="home_wrapper">
+            <div class="left-body main-content">
+                <!---Cards for team task-->
+                <div class="cards">
+                    <div class="card">
+                        <h4 class="title">Task for the week</h4>
+                        <div class="inner-card">
+                            <p class="des"> Good from itself gathering rule men void
+                                female let is creeping own.
+                            </p>
+                            <div class="action">
+                                <li class='modal_toggle modal_wrapper'>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                    <span class='tooltip'>Edit</span>
+                                    <!-- Modal begins -->
+                                    <div class="hidden edit_task modal">
+                                        
+                                        <div class="modal_content">
+                                          <div class="edit-nav">
+                                          <li><img src="assets/image/louis.png" alt="dev">
+                                          <div class="nam">Louis E<br><div class="smal-dev">Developer</div></div></li>  
+                                          <div id="cancel">&times;</div> 
+                                          </div>
+                                          <p>Edit Task</p>
+<textarea placeholder="Sea cattle. The moving together there don't two night our midst behold there fill brought tree rule there from firmament night be female. Firmament he replenish third fruit him there grass beast. Very wherein. Hath, them. Seas grass shall form had divide." name="message" id="" cols="30" rows="9"></textarea> 
+                                          <div class="edit-foot">
+                                            <button>EDIT TASK</button> <div style="cursor: pointer;" class="footerclose">CANCEL</div>
+                                          </div>
+                                          
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+                                </li>
+                                <li class="modal_toggle modal_wrapper">
+                                    <img src="assets/image/upload.png" alt="upload">
+                                    <span class="tooltip">upload</span>
+                                    <!-- upload modal begins -->
+                                    <div class="hidden upload modal">
+                                      <div class="moda_content">
+                                          <div class="up-nav">
+                                              <p>Upload Image</p>  
+                                              <div id="cancel">&times;</div> 
+                                              </div>
+                                              <div style="margin-left: 20px; display: flex; justify-content: center;">
+                                                <form action="">
+                                              <input type="file" size="20">
+                                            </form>
+                                          </div>
+                                          <div class="but">
+                                          <button type="button">Upload</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <img src="assets/image/copy-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/image/message.png" alt="upload">
+                                  </li>
+                                    <!-- List contiaining history modal -->
+                                  <li class="modal_toggle modal_wrapper">
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                    <!-- Modal begins -->
+                                    <div class="hidden modal">
+                                        <div id="cancel">&times;</div>
+                                        <div class="modal_content">
+                                            <div class="content grid">
+                                                <div class="card-wrapper">
+                                                     <div class="inner-card">
+                                                        <p class="des">Have own , kind dominion,
+                                                            forth air waters won't days
+                                                            whales fruitful fruit give shall.
+                                                            Life their rule his. Over first
+                                                            The.
+                                                            
+                                                        </p>
+                                                        <div class="img le" style="background:lightgrey;">
+                                                          <img src="assets/image/signupscreenshot2.png">
+                                                        </div>
+                                                        <div class="action">
+                                                            <li>
+                                                                <span>600</span>
+                                                            </li>
+                                                        </div>                       
+                                                    </div>  
+                                                </div>
+                                                <div class="timelines">
+                                                  <h4>Single Task History</h4>
+                                                  <!-- Each history -->
+                                                  <div class="timeline">
+                                                    <div class="meta">
+                                                      <p class="task">
+                                                        Goal Moved
+                                                      </p>
+                                                      <div class="author">
+                                                        By <span>Joshua Okwe</span>                                                      </div>
+                                                    </div>
+                                                    <div class="stats">
+                                                      <li>
+                                                        <span>Status</span>
+                                                        <span class="value">1</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Hours</span>
+                                                        <span class="value">5</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Date</span>
+                                                        <span class="value">July 23, 2019</span>
+                                                      </li>
+                                                    </div>
+                                                  </div>
+                                                  <div class="timeline">
+                                                    <div class="meta">
+                                                      <p class="task">
+                                                        Image added
+                                                      </p>
+                                                      <div class="author">
+                                                        By <span>Joshua Okwe</span>
+                                                      </div>
+                                                    </div>
+                                                    <div class="stats">
+                                                      <li>
+                                                        <span>Status</span>
+                                                        <span class="value">1</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Hours</span>
+                                                        <span class="value">5</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Date</span>
+                                                        <span class="value">July 23, 2019</span>
+                                                      </li>
+                                                    </div>
+                                                  </div>
+                                                  <div class="timeline">
+                                                    <div class="meta">
+                                                      <p class="task">
+                                                        Goal Moved
+                                                      </p>
+                                                      <div class="author">
+                                                        By <span>Joshua Okwe</span>
+                                                      </div>
+                                                    </div>
+                                                    <div class="stats">
+                                                      <li>
+                                                        <span>Status</span>
+                                                        <span class="value">1</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Hours</span>
+                                                        <span class="value">5</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Date</span>
+                                                        <span class="value">July 23, 2019</span>
+                                                      </li>
+                                                    </div>
+                                                  </div>
+                                                  <div class="timeline">
+                                                    <div class="meta">
+                                                      <p class="task">
+                                                        Goal Moved
+                                                      </p>
+                                                      <div class="author">
+                                                        By <span>Joshua Okwe</span>
+                                                      </div>
+                                                    </div>
+                                                    <div class="stats">
+                                                      <li>
+                                                        <span>Status</span>
+                                                        <span class="value">1</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Hours</span>
+                                                        <span class="value">5</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Date</span>
+                                                        <span class="value">July 23, 2019</span>
+                                                      </li>
+                                                    </div>
+                                                  </div>
+                                                  <div class="timeline">
+                                                    <div class="meta">
+                                                      <p class="task">
+                                                        Goal Moved
+                                                      </p>
+                                                      <div class="author">
+                                                        By <span>Joshua Okwe</span>
+                                                      </div>
+                                                    </div>
+                                                    <div class="stats">
+                                                      <li>
+                                                        <span>Status</span>
+                                                        <span class="value">1</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Hours</span>
+                                                        <span class="value">5</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Date</span>
+                                                        <span class="value">July 23, 2019</span>
+                                                      </li>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+                                </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
+                        </div>  
+                        <div class="inner-card">
+                          <div class="badge">1</div>
+                            <p class="des"> Sea cattle. The moving 
+                              together there don't two night 
+                              our midst behold there fill brought 
+                              tree rule there from firmament night be female.
+                              Firmament he replenish third fruit him there 
+                              grass beast.
+                              Very wherein. Hath, them. 
+                              Seas grass shall form had divide. 
+                            </p>
+                            <div class="action">
+                                <li class='modal_toggle modal_wrapper'>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                    <span class='tooltip'>Edit</span>
+                                    <!-- Modal begins -->
+                                    <div class="hidden edit_task modal">
+                                        
+                                        <div class="modal_content">
+                                          <div class="edit-nav">
+                                          <li><img src="assets/image/louis.png" alt="dev">
+                                          <div class="nam">Louis E<br><div class="smal-dev">Developer</div></div></li>  
+                                          <div id="cancel">&times;</div> 
+                                          </div>
+                                          <p>Edit Task</p>
+ <textarea placeholder="Sea cattle. The moving together there don't two night our midst behold there fill brought tree rule there from firmament night be female. Firmament he replenish third fruit him there grass beast. Very wherein. Hath, them. Seas grass shall form had divide." name="message" id="" cols="30" rows="9"></textarea> 
+ 
+                                          <div class="edit-foot">
+                                            <button>EDIT TASK</button> <div>CANCEL</div>
+                                          </div>
+                                          
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends --></li>
+                                    <li>
+                                        <img src="assets/image/upload.png" alt="upload">
+                                    </li>
+
+                                    <li>
+                                        <img src="assets/image/copy-solid.svg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="assets/image/message.png" alt="upload">
+                                      </li>  <!-- List contiaining a Modal -->
+                                  <li class="modal_toggle modal_wrapper">
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                   <!-- Modal begins -->
+                                   <div class="hidden modal">
+                                    <div id="cancel">&times;</div>
+                                    <div class="modal_content">
+                                        <div class="content grid">
+                                            <div class="card-wrapper">
+                                                 <div class="inner-card">
+                                                    <p class="des">Have own , kind dominion,
+                                                        forth air waters won't days
+                                                        whales fruitful fruit give shall.
+                                                        Life their rule his. Over first
+                                                        The.
+                                                        
+                                                    </p>
+                                                    <div class="img le">
+                                                      <img src="assets/image/signupscreenshot2.png">
+                                                    </div>
+                                                    <div class="action">
+                                                        <li>
+                                                            <span>600</span>
+                                                        </li>
+                                                    </div>                       
+                                                </div>  
+                                            </div>
+                                            <div class="timelines">
+                                              <h4>Single Task History</h4>
+                                              <!-- Each history -->
+                                              <div class="timeline">
+                                                <div class="meta">
+                                                  <p class="task">
+                                                    Goal Moved
+                                                  </p>
+                                                  <div class="author">
+                                                    By <span>Joshua Okwe</span>                                                      </div>
+                                                </div>
+                                                <div class="stats">
+                                                  <li>
+                                                    <span>Status</span>
+                                                    <span class="value">1</span>
+                                                  </li>
+                                                  <li>
+                                                    <span>Hours</span>
+                                                    <span class="value">5</span>
+                                                  </li>
+                                                  <li>
+                                                    <span>Date</span>
+                                                    <span class="value">July 23, 2019</span>
+                                                  </li>
+                                                </div>
+                                              </div>
+                                              <div class="timeline">
+                                                <div class="meta">
+                                                  <p class="task">
+                                                    Image added
+                                                  </p>
+                                                  <div class="author">
+                                                    By <span>Joshua Okwe</span>
+                                                  </div>
+                                                </div>
+                                                <div class="stats">
+                                                  <li>
+                                                    <span>Status</span>
+                                                    <span class="value">1</span>
+                                                  </li>
+                                                  <li>
+                                                    <span>Hours</span>
+                                                    <span class="value">5</span>
+                                                  </li>
+                                                  <li>
+                                                    <span>Date</span>
+                                                    <span class="value">July 23, 2019</span>
+                                                  </li>
+                                                </div>
+                                              </div>
+                                              <div class="timeline">
+                                                <div class="meta">
+                                                  <p class="task">
+                                                    Goal Moved
+                                                  </p>
+                                                  <div class="author">
+                                                    By <span>Joshua Okwe</span>
+                                                  </div>
+                                                </div>
+                                                <div class="stats">
+                                                  <li>
+                                                    <span>Status</span>
+                                                    <span class="value">1</span>
+                                                  </li>
+                                                  <li>
+                                                    <span>Hours</span>
+                                                    <span class="value">5</span>
+                                                  </li>
+                                                  <li>
+                                                    <span>Date</span>
+                                                    <span class="value">July 23, 2019</span>
+                                                  </li>
+                                                </div>
+                                              </div>
+                                              <div class="timeline">
+                                                <div class="meta">
+                                                  <p class="task">
+                                                    Goal Moved
+                                                  </p>
+                                                  <div class="author">
+                                                    By <span>Joshua Okwe</span>
+                                                  </div>
+                                                </div>
+                                                <div class="stats">
+                                                  <li>
+                                                    <span>Status</span>
+                                                    <span class="value">1</span>
+                                                  </li>
+                                                  <li>
+                                                    <span>Hours</span>
+                                                    <span class="value">5</span>
+                                                  </li>
+                                                  <li>
+                                                    <span>Date</span>
+                                                    <span class="value">July 23, 2019</span>
+                                                  </li>
+                                                </div>
+                                              </div>
+                                              <div class="timeline">
+                                                <div class="meta">
+                                                  <p class="task">
+                                                    Goal Moved
+                                                  </p>
+                                                  <div class="author">
+                                                    By <span>Joshua Okwe</span>
+                                                  </div>
+                                                </div>
+                                                <div class="stats">
+                                                  <li>
+                                                    <span>Status</span>
+                                                    <span class="value">1</span>
+                                                  </li>
+                                                  <li>
+                                                    <span>Hours</span>
+                                                    <span class="value">5</span>
+                                                  </li>
+                                                  <li>
+                                                    <span>Date</span>
+                                                    <span class="value">July 23, 2019</span>
+                                                  </li>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal ends -->
+                            </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            
+                            </div>   
+                                              
+                        </div>   
+                        <div class="modal_toggle  btn-add">
+                            <button type="button">ADD TASK</button>
+                            <div class="sma"><img src="assets/image/Vector.png" alt=""></div>
+                              <!-- Modal begins -->
+                              <div class="hidden  type-add modal">
+                                  <div class="modal_content">    
+                                    <div class="edit-nav">
+                                      <li><img src="assets/image/louis.png" alt="dev">
+                                      <div class="nam">Louis E<br><div class="smal-dev">Developer</div></div></li>  
+                                      <div id="cancel">&times;</div> 
+                                    </div>  
+                                    <h5 style="color: green; text-align: center; margin-top: -1px;">{{dataservice.message}}</h5>
+                                    <p>Add A Task</p>   
+                                    <form (ngSubmit)="addGoal()">                                 
+                             <textarea  [(ngModel)]="dataservice.goal_name" placeholder="Enter Tasks details" name="message" id="" cols="30" rows="9"></textarea> 
+                                     <div class="edit-foot">
+                                      <button style="cursor: pointer;" type="button" 
+                                      value="Add Task" (click)="addGoal()">ADD TASK</button> 
+                                      <div style="cursor: pointer;" class="footerclose">CANCEL</div>
+                                    </div>
+                                  </form>                                                                                                     
+                                                                                            
+                            </div>
+                            </div>
+                            <!-- Modal ends -->
+                        </div>  
+                    </div>
+                    <div class="card">
+                        <h4 class="title">Today's Target</h4>
+                        <div class="inner-card">
+                            <p class="des"> Brought all they're forth you appear
+                              wherein may. Make morning image created Appear spirit darkness,
+                             seasons said have together set. Sixth after behold also 
+                            said make creature he, have. 
+                            </p>
+                            <div class="action">
+                                <li class='modal_toggle modal_wrapper'>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                    <span class='tooltip'>Edit</span>
+                                    <!-- Modal begins -->
+                                    <div class="hidden edit_task modal">
+                                        
+                                        <div class="modal_content">
+                                          <div class="edit-nav">
+                                          <li><img src="assets/image/louis.png" alt="dev">
+                                          <div class="nam">Louis E<br><div class="smal-dev">Developer</div></div></li>  
+                                          <div id="cancel">&times;</div> 
+                                          </div>
+                                          <p>Edit Task</p>
+ <textarea placeholder="Sea cattle. The moving together there don't two night our midst behold there fill brought tree rule there from firmament night be female. Firmament he replenish third fruit him there grass beast. Very wherein. Hath, them. Seas grass shall form had divide." name="message" id="" cols="30" rows="9"></textarea> 
+                                                                   
+                                          <div class="edit-foot">
+                                            <button>EDIT TASK</button> <div>CANCEL</div>
+                                          </div>
+                                          
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends --></li>
+                                    <li>
+                                        <img src="assets/image/upload.png" alt="upload">
+                                    </li>
+
+                                    <li>
+                                        <img src="assets/image/copy-solid.svg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="assets/image/message.png" alt="upload">
+                                      </li>
+                                  <!-- List contiaining a Modal -->
+                                  <li class="modal_toggle modal_wrapper">
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                    <!-- Modal begins -->
+                                    <div class="hidden modal">
+                                      <div id="cancel">&times;</div>
+                                      <div class="modal_content">
+                                          <div class="content grid">
+                                              <div class="card-wrapper">
+                                                   <div class="inner-card">
+                                                      <p class="des">Have own , kind dominion,
+                                                          forth air waters won't days
+                                                          whales fruitful fruit give shall.
+                                                          Life their rule his. Over first
+                                                          The.
+                                                          
+                                                      </p>
+                                                      <div class="img le">
+                                                        <img src="assets/image/signupscreenshot2.png">
+                                                      </div>
+                                                      <div class="action">
+                                                          <li>
+                                                              <span>600</span>
+                                                          </li>
+                                                      </div>                       
+                                                  </div>  
+                                              </div>
+                                              <div class="timelines">
+                                                <h4>Single Task History</h4>
+                                                <!-- Each history -->
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>                                                      </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Image added
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- Modal ends -->
+                              
+                                </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
+                        </div>   
+                        <div class="inner-card">
+                            <p class="des"> Sea cattle.
+                            </p>
+                            <div class="action">
+                                <li class='modal_toggle modal_wrapper'>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                    <span class='tooltip'>Edit</span>
+                                    <!-- Modal begins -->
+                                    <div class="hidden edit_task modal">
+                                        
+                                        <div class="modal_content">
+                                          <div class="edit-nav">
+                                          <li><img src="assets/image/louis.png" alt="dev">
+                                          <div class="nam">Louis E<br><div class="smal-dev">Developer</div></div></li>  
+                                          <div id="cancel">&times;</div> 
+                                          </div>
+                                          <p>Edit Task</p>
+     <textarea placeholder="Sea cattle. The moving together there don't two night our midst behold there fill brought tree rule there from firmament night be female. Firmament he replenish third fruit him there grass beast. Very wherein. Hath, them. Seas grass shall form had divide." name="message" id="" cols="30" rows="9"></textarea> 
+ 
+                                          <div class="edit-foot">
+                                            <button>EDIT TASK</button> <div>CANCEL</div>
+                                          </div>
+                                          
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends --></li>
+                                    <li>
+                                        <img src="assets/image/upload.png" alt="upload">
+                                    </li>
+
+                                    <li>
+                                        <img src="assets/image/copy-solid.svg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="assets/image/message.png" alt="upload">
+                                      </li>  <!-- List contiaining a Modal -->
+                                  <li class="modal_toggle modal_wrapper">
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                    <!-- Modal begins -->
+                                    <div class="hidden modal">
+                                      <div id="cancel">&times;</div>
+                                      <div class="modal_content">
+                                          <div class="content grid">
+                                              <div class="card-wrapper">
+                                                   <div class="inner-card">
+                                                      <p class="des">Have own , kind dominion,
+                                                          forth air waters won't days
+                                                          whales fruitful fruit give shall.
+                                                          Life their rule his. Over first
+                                                          The.
+                                                          
+                                                      </p>
+                                                      <div class="img le">
+                                                        <img src="assets/image/signupscreenshot2.png">
+                                                      </div>
+                                                      <div class="action">
+                                                          <li>
+                                                              <span>600</span>
+                                                          </li>
+                                                      </div>                       
+                                                  </div>  
+                                              </div>
+                                              <div class="timelines">
+                                                <h4>Single Task History</h4>
+                                                <!-- Each history -->
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>                                                      </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Image added
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- Modal ends -->
+                              </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
+                        </div>   
+                        <div class="inner-card">
+                            <p class="des">Good from itself gathering rule men void
+                                female let is creeping own. Isn't from
+                                gathered were may above under. Gathering it his us.
+                                Creature Shall had spirit herb.
+                                Signs<br> 
+                                
+                                Sea cattle. The moving together there don't two night
+                                our midst behold there fill brought tree rule there from
+                                firmament night be female. Firmament he replenish third
+                                fruit him there grass beast. Very wherein. Hath, them.
+                                Seas grass shall form had divide.
+                            </p>
+                            <div class="action">
+                                <li class='modal_toggle modal_wrapper'>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                    <span class='tooltip'>Edit</span>
+                                    <!-- Modal begins -->
+                                    <div class="hidden edit_task modal">
+                                        
+                                        <div class="modal_content">
+                                          <div class="edit-nav">
+                                          <li><img src="assets/image/louis.png" alt="dev">
+                                          <div class="nam">Louis E<br><div class="smal-dev">Developer</div></div></li>  
+                                          <div id="cancel">&times;</div> 
+                                          </div>
+                                          <p>Edit Task</p>
+  <textarea placeholder="Sea cattle. The moving together there don't two night our midst behold there fill brought tree rule there from firmament night be female. Firmament he replenish third fruit him there grass beast. Very wherein. Hath, them. Seas grass shall form had divide." name="message" id="" cols="30" rows="9"></textarea> 
+ 
+                                          <div class="edit-foot">
+                                            <button>EDIT TASK</button> <div>CANCEL</div>
+                                          </div>
+                                          
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends --></li>
+                                    <li>
+                                        <img src="assets/image/upload.png" alt="upload">
+                                    </li>
+
+                                    <li>
+                                        <img src="assets/image/copy-solid.svg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="assets/image/message.png" alt="upload">
+                                      </li>  <!-- List contiaining a Modal -->
+                                  <li class="modal_toggle modal_wrapper">
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                    <!-- Modal begins -->
+                                    <div class="hidden modal">
+                                      <div id="cancel">&times;</div>
+                                      <div class="modal_content">
+                                          <div class="content grid">
+                                              <div class="card-wrapper">
+                                                   <div class="inner-card">
+                                                      <p class="des">Have own , kind dominion,
+                                                          forth air waters won't days
+                                                          whales fruitful fruit give shall.
+                                                          Life their rule his. Over first
+                                                          The.
+                                                          
+                                                      </p>
+                                                      <div class="img le">
+                                                        <img src="assets/image/signupscreenshot2.png">
+                                                      </div>
+                                                      <div class="action">
+                                                          <li>
+                                                              <span>600</span>
+                                                          </li>
+                                                      </div>                       
+                                                  </div>  
+                                              </div>
+                                              <div class="timelines">
+                                                <h4>Single Task History</h4>
+                                                <!-- Each history -->
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>                                                      </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Image added
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- Modal ends -->
+                              </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
+                        </div>   
+                        <div class="inner-card">
+                            <p class="des"> Good from itself gathering rule men void
+                                female let is creeping own. Isn't from
+                                gathered were may above under. Gathering it his us.
+                                Creature Shall had spirit herb.
+                                Signs<br> 
+                                
+                                Sea cattle. The moving together there don't two night
+                                our midst behold there fill brought tree rule there from
+                                firmament night be female. Firmament he replenish third
+                                fruit him there grass beast. Very wherein. Hath, them.
+                                Seas grass shall form had divide.
+                            </p>
+                            <div class="action">
+                                <li class='modal_toggle modal_wrapper'>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                    <span class='tooltip'>Edit</span>
+                                    <!-- Modal begins -->
+                                    <div class="hidden edit_task modal">
+                                        
+                                        <div class="modal_content">
+                                          <div class="edit-nav">
+                                          <li><img src="assets/image/louis.png" alt="dev">
+                                          <div class="nam">Louis E<br><div class="smal-dev">Developer</div></div></li>  
+                                          <div id="cancel">&times;</div> 
+                                          </div>
+                                          <p>Edit Task</p>
+  <textarea placeholder="Sea cattle. The moving together there don't two night our midst behold there fill brought tree rule there from firmament night be female. Firmament he replenish third fruit him there grass beast. Very wherein. Hath, them. Seas grass shall form had divide." name="message" id="" cols="30" rows="9"></textarea> 
+ 
+                                          <div class="edit-foot">
+                                            <button>EDIT TASK</button> <div>CANCEL</div>
+                                          </div>
+                                          
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends --></li>
+                                    <li>
+                                        <img src="assets/image/upload.png" alt="upload">
+                                    </li>
+
+                                    <li>
+                                        <img src="assets/image/copy-solid.svg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="assets/image/message.png" alt="upload">
+                                      </li>  <!-- List contiaining a Modal -->
+                                  <li class="modal_toggle modal_wrapper">
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                    <!-- Modal begins -->
+                                    <div class="hidden modal">
+                                      <div id="cancel">&times;</div>
+                                      <div class="modal_content">
+                                          <div class="content grid">
+                                              <div class="card-wrapper">
+                                                   <div class="inner-card">
+                                                      <p class="des">Have own , kind dominion,
+                                                          forth air waters won't days
+                                                          whales fruitful fruit give shall.
+                                                          Life their rule his. Over first
+                                                          The.
+                                                          
+                                                      </p>
+                                                      <div class="img le">
+                                                        <img src="assets/image/signupscreenshot2.png">
+                                                      </div>
+                                                      <div class="action">
+                                                          <li>
+                                                              <span>600</span>
+                                                          </li>
+                                                      </div>                       
+                                                  </div>  
+                                              </div>
+                                              <div class="timelines">
+                                                <h4>Single Task History</h4>
+                                                <!-- Each history -->
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>                                                      </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Image added
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- Modal ends -->
+                              </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
+                        </div>   
+                        
+                    </div>
+                    <div class="card">
+                        <h4 class="title">Verify Task</h4>
+                        <div class="inner-card">
+                            <p class="des">Add image for the file. 
+                            </p>
+                            <div class="action">
+                                <li class='modal_toggle modal_wrapper'>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                    <span class='tooltip'>Edit</span>
+                                    <!-- Modal begins -->
+                                    <div class="hidden edit_task modal">
+                                        
+                                        <div class="modal_content">
+                                          <div class="edit-nav">
+                                          <li><img src="assets/image/louis.png" alt="dev">
+                                          <div class="nam">Louis E<br><div class="smal-dev">Developer</div></div></li>  
+                                          <div id="cancel">&times;</div> 
+                                          </div>
+                                          <p>Edit Task</p>
+  <textarea placeholder="Sea cattle. The moving together there don't two night our midst behold there fill brought tree rule there from firmament night be female. Firmament he replenish third fruit him there grass beast. Very wherein. Hath, them. Seas grass shall form had divide." name="message" id="" cols="30" rows="9"></textarea> 
+ 
+                                          <div class="edit-foot">
+                                            <button>EDIT TASK</button> <div>CANCEL</div>
+                                          </div>
+                                          
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends --></li>
+                                    <li>
+                                        <img src="assets/image/upload.png" alt="upload">
+                                    </li>
+
+                                    <li>
+                                        <img src="assets/image/copy-solid.svg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="assets/image/message.png" alt="upload">
+                                      </li>  <!-- List contiaining a Modal -->
+                                  <li class="modal_toggle modal_wrapper">
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                    <!-- Modal begins -->
+                                    <div class="hidden modal">
+                                      <div id="cancel">&times;</div>
+                                      <div class="modal_content">
+                                          <div class="content grid">
+                                              <div class="card-wrapper">
+                                                   <div class="inner-card">
+                                                      <p class="des">Have own , kind dominion,
+                                                          forth air waters won't days
+                                                          whales fruitful fruit give shall.
+                                                          Life their rule his. Over first
+                                                          The.
+                                                          
+                                                      </p>
+                                                      <div class="img le">
+                                                        <img src="assets/image/signupscreenshot2.png">
+                                                      </div>
+                                                      <div class="action">
+                                                          <li>
+                                                              <span>600</span>
+                                                          </li>
+                                                      </div>                       
+                                                  </div>  
+                                              </div>
+                                              <div class="timelines">
+                                                <h4>Single Task History</h4>
+                                                <!-- Each history -->
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>                                                      </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Image added
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- Modal ends -->
+                              
+                                </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
+                        </div>   
+                    </div>
+                    <div class="card">
+                        <h4 class="title">Done</h4>
+                        <p class="bold-let">S085</p>
+                        <div class="inner-card">
+                            <p class="des"> 
+                              Have own. Kind dominion,
+                              forth air waters won't days 
+                              whales fruiful fruit give shall.
+                              Life their rule his. Over first
+                              The.
+                            </p>
+                            <div class="img" style="background: lightgrey;">
+                              <img src="assets/image/signupscreenshot2.png" alt="signup">
+                            </div>
+                            <div class="action">
+                                <li class='modal_toggle modal_wrapper'>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                    <span class='tooltip'>Edit</span>
+                                    <!-- Modal begins -->
+                                    <div class="hidden edit_task modal">
+                                        
+                                        <div class="modal_content">
+                                          <div class="edit-nav">
+                                          <li><img src="assets/image/louis.png" alt="dev">
+                                          <div class="nam">Louis E<br><div class="smal-dev">Developer</div></div></li>  
+                                          <div id="cancel">&times;</div> 
+                                          </div>
+                                          <p>Edit Task</p>
+  <textarea placeholder="Sea cattle. The moving together there don't two night our midst behold there fill brought tree rule there from firmament night be female. Firmament he replenish third fruit him there grass beast. Very wherein. Hath, them. Seas grass shall form had divide." name="message" id="" cols="30" rows="9"></textarea> 
+ 
+                                          <div class="edit-foot">
+                                            <button>EDIT TASK</button> <div>CANCEL</div>
+                                          </div>
+                                          
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+                                </li>
+                                <li>
+                                    <img src="assets/image/upload.png" alt="upload">
+                                </li>
+
+                                <li>
+                                    <img src="assets/image/copy-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/image/message.png" alt="upload">
+                                  </li> <!-- List contiaining a Modal -->
+                                 <li class="modal_toggle modal_wrapper">
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                    <!-- Modal begins -->
+                                    <div class="hidden modal">
+                                      <div id="cancel">&times;</div>
+                                      <div class="modal_content">
+                                          <div class="content grid">
+                                              <div class="card-wrapper">
+                                                   <div class="inner-card">
+                                                      <p class="des">Have own , kind dominion,
+                                                          forth air waters won't days
+                                                          whales fruitful fruit give shall.
+                                                          Life their rule his. Over first
+                                                          The.
+                                                          
+                                                      </p>
+                                                      <div class="img le">
+                                                        <img src="assets/image/signupscreenshot2.png">
+                                                      </div>
+                                                      <div class="action">
+                                                          <li>
+                                                              <span>600</span>
+                                                          </li>
+                                                      </div>                       
+                                                  </div>  
+                                              </div>
+                                              <div class="timelines">
+                                                <h4>Single Task History</h4>
+                                                <!-- Each history -->
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>                                                      </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Image added
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- Modal ends -->
+                              
+                                </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
+                        </div>   
+                        <div class="inner-card">
+                            <p class="des">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Consectetur eius ullam fugit quae optio omnis voluptas 
+                             alias modi blanditiis quos quod incidunt non consequatur, 
+                            temporibus, maxime asperiores ipsa magna aliqua.
+                            </p>
+                            <div class="action">
+                                <li class='modal_toggle modal_wrapper'>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                    <span class='tooltip'>Edit</span>
+                                    <!-- Modal begins -->
+                                    <div class="hidden edit_task modal">
+                                        
+                                        <div class="modal_content">
+                                          <div class="edit-nav">
+                                          <li><img src="assets/image/louis.png" alt="dev">
+                                          <div class="nam">Louis E<br><div class="smal-dev">Developer</div></div></li>  
+                                          <div id="cancel">&times;</div> 
+                                          </div>
+                                          <p>Edit Task</p>
+  <textarea placeholder="Sea cattle. The moving together there don't two night our midst behold there fill brought tree rule there from firmament night be female. Firmament he replenish third fruit him there grass beast. Very wherein. Hath, them. Seas grass shall form had divide." name="message" id="" cols="30" rows="9"></textarea> 
+ 
+                                          <div class="edit-foot">
+                                            <button>EDIT TASK</button> <div>CANCEL</div>
+                                          </div>
+                                          
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends --></li>
+                                    <li>
+                                        <img src="assets/image/upload.png" alt="upload">
+                                    </li>
+
+                                    <li>
+                                        <img src="assets/image/copy-solid.svg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="assets/image/message.png" alt="upload">
+                                      </li>  <!-- List contiaining a Modal -->
+                                  <li class="modal_toggle modal_wrapper">
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                    <!-- Modal begins -->
+                                    <div class="hidden modal">
+                                      <div id="cancel">&times;</div>
+                                      <div class="modal_content">
+                                          <div class="content grid">
+                                              <div class="card-wrapper">
+                                                   <div class="inner-card">
+                                                      <p class="des">Have own , kind dominion,
+                                                          forth air waters won't days
+                                                          whales fruitful fruit give shall.
+                                                          Life their rule his. Over first
+                                                          The.
+                                                          
+                                                      </p>
+                                                      <div class="img le">
+                                                        <img src="assets/image/signupscreenshot2.png">
+                                                      </div>
+                                                      <div class="action">
+                                                          <li>
+                                                              <span>600</span>
+                                                          </li>
+                                                      </div>                       
+                                                  </div>  
+                                              </div>
+                                              <div class="timelines">
+                                                <h4>Single Task History</h4>
+                                                <!-- Each history -->
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>                                                      </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Image added
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                                <div class="timeline">
+                                                  <div class="meta">
+                                                    <p class="task">
+                                                      Goal Moved
+                                                    </p>
+                                                    <div class="author">
+                                                      By <span>Joshua Okwe</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="stats">
+                                                    <li>
+                                                      <span>Status</span>
+                                                      <span class="value">1</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Hours</span>
+                                                      <span class="value">5</span>
+                                                    </li>
+                                                    <li>
+                                                      <span>Date</span>
+                                                      <span class="value">July 23, 2019</span>
+                                                    </li>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- Modal ends -->
+                              </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <!---Right body-->
+            <div class="right-body">
+            <p class="notice">Joshua Okwe has joined the chat</p>
+            <div class="first-right">
+                <div> 
+                    <img src="assets/image/josh.png" alt="">
+                    <span class="author"> Joshua Okwe</span>
+                </div>
+                <p >Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit.
+                </p>
+                <span class="timeStamp">10:02am * 9-07-2019</span>
+            </div>
+            <div class="second-right">
+                <div> 
+                    <img src="assets/image/Azeem.png" alt="">
+                    <span class="author">Azeem Animashaun</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua
+                </p>
+                <span class="timeStamp">10:02am * 9-07-2019</span>
+            </div>
+            <p class="notice">Louis E has joined the chat</p>
+                
+            <div class="third-right">
+                <div>
+                     <img src="assets/image/louis.png" alt="">
+                     <span class="author">Louis E</span>
+                 </div>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Lorem ipsum
+                    dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                </p>
+                <span class="timeStamp">10:02am * 9-07-2019</span>
+            </div>
+            <p class="notice">Azeem Animashaun has left the chat</p>
+            <p class="notice">Olufeko Samuel has joined the chat</p>
+            <p class="notice">Oluwaseyi.E has left the chat</p>
+            <div class="fourth-right">
+                <div> 
+                    <img src="assets/image/josh.png" alt="">
+                    <span class="author">Joshua Okwe</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua
+                </p>
+                <span class="timeStamp">10:02am * 9-07-2019</span>
+            </div>
+               <input type="text" placeholder="send a message">
+            
+        </div>
+                <!-- Home wrapper closes -->
+            </div>
+        </div>
+    </div>
+
+
+</div>

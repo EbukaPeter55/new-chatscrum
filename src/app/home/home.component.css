@@ -1,0 +1,248 @@
+.entire-page {
+  background: #26A69A;
+}
+
+.header-left img{
+    width:11.46%;
+    height:4.11%;
+    margin-top: 3.33%;
+    margin-left: 6.94%;
+    }
+  .header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .header-right li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.89%;
+  /* line-height: 17px; */
+  list-style: none;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+  margin-top: -3.33%;
+  cursor: pointer;
+  }
+  .header-right button {
+    background: #4DFFD4;
+    border-radius: 4px;
+    width: 165px;
+    height: 38px;
+    font-size: 14px;
+    /* line-height: 17px; */
+    line-height: 1.89%;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-weight: bold;
+    margin-right: 6.94%;
+    margin-top: -3.33%;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+  }
+  
+  /* BODY */
+  div.home-items {
+    width: 41.32%;
+    height: 16.56%;
+    /* margin-top: 243px; */
+    margin-top: 22.78%;
+    margin-left: 6.94%;
+    font-family: SF Pro Display;
+    font-size: 42px;
+    margin-bottom: 1.11%;
+    /* line-height: 50px; */
+    color: #4DFFD4;
+  }
+  span.home-items2 {
+    width: 37.64%;
+    height: 6.33%;
+    margin-left: 6.74%;
+    /* margin-top: 1.11%; */
+    /* margin-top: 52.11%; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    line-height: 6.33%;
+    color: #FFFFFF;
+    /* margin-bottom: 2.22%; */
+  }
+  .buttonHolder {
+    margin-left: 6.94%;
+    margin-top: 2.22%;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  #btn-1 {
+    width: 165px;
+    height: 38px;
+    background: #4DFFD4;
+    font-weight: 1000;
+    border-radius: 4px;
+    border: none;
+  }
+  .buttonHolder2 {
+    margin-left: 265px;
+    margin-top: -40px;
+    line-height: 17px;
+  }
+  
+  .buttonHolder2 input {
+    width: 158px;
+    height: 38px;
+    background: inherit;
+    border: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 1000;
+  }
+  div.home-items4 {
+    /* position: absolute; */
+    margin-left: 51.74%;
+    /* margin-top: -466px; */
+    margin-top: -37.78%;
+    /* margin-top: -42%; */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+  }
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* FOOTER */
+  .container-2 {
+     height: 8.22%;
+     background: #FFFFFF;
+     margin-top: 3.33%;
+     height: 74px;
+     width: 102%;
+     margin-bottom: -2%;
+     margin-left: -2%;
+     border:none;
+     overflow: hidden;
+  }
+  .chatscr {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 6.94%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  }
+  .supp {
+    margin-left: 75%;
+  }
+  .tou {
+    margin-left: 2.57%;
+  }
+  
+  
+  
+  /* Use a media query to add a break point at 800px: */
+  @media screen and (max-width:1220px) {
+    .header-left img {
+      margin-top: 2.46%;
+      margin-left: 4.27%;
+      width:125px;
+      height:28px;
+    }
+    .header-right li {
+      /* margin-top: -4.92%; */
+      margin-top: -30px;
+      width: 60px;
+      height: 34px;
+    }
+    .header-right button {
+      /* margin-top: -4.92%; */
+      /* margin-top: -28px; */
+      margin-top: -30px;
+      width: 101px;
+      height: 34px;
+    }
+    div.home-items4 {
+      margin-left: 5.6%;
+      margin-top: 35px;
+      max-width: 98.93%;
+      margin-bottom: 25px;
+      /* max-width: 1000px; */
+    }
+    div.home-items {
+      margin-left: 5.6%;
+      width: 77.33%;
+    }
+    /* div.home-items img {
+      src: 'assets/img/items_mini.png'
+    } */
+    span.home-items2 {
+      margin-left: 5.6%;
+      font-size: 35px;
+      width: 271px;
+      font-size: 24px;
+      white-space: nowrap;
+    }
+    .header-left img{
+      margin-left: 5.6%;
+    }
+    .buttonHolder {
+      margin-left: 5.6%;
+    }
+    .buttonHolder2 input{
+      margin-left: -60px;
+      /* width: 33.33%; */
+      /* margin-left: 37.6%; */
+    }
+    #btn-1 {
+      /* width: 33.33%; */
+      max-width: 165px;
+    }
+    .container-2 {
+      /* display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; */
+      /* height: 6.40%; */
+      height: 52px;
+      background: #FFFFFF;
+      /* margin-top: 3.33%; */
+      /* height: 74px; */
+      /* width: 102%; */
+      /* margin-bottom: -2%; */
+      /* margin-left: -2%; */
+      border:none;
+      overflow: hidden;
+   }
+   .chatscr {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* float: right; */
+    color: rgba(0, 0, 0, 0.5);
+    /* margin-left: 6.94%; */
+    margin-left: 4.27%;
+    padding-top: 10px;
+    /* padding-bottom: 20px; */
+    }
+    .supp {
+      /* float:right; */
+      /* margin-right: 14.375%; */
+      /* margin-left: 68.68%; */
+      display: none;
+    }
+    .tou {
+      float: right;
+      /* margin-right: 6.94%; */
+      margin-right: 4.27%;
+      /* margin-right: -9.72%; */
+    }
+  }

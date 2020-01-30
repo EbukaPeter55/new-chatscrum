@@ -1,0 +1,67 @@
+<!--Navigation bar--->
+<div class="body-1">
+<header>
+<div class="container">
+    <!--The chatscrum logo at the left-->
+    <div class="header-left">
+        <img src="assets/image/chatscrumlogo.png" alt="ChatScrum logo">
+    </div>
+    <!--The login and signup link-->
+    <div class="header-right">
+        <li routerLink="/login">LOGIN</li>
+        <button>SIGN UP</button>
+    </div>
+</div>
+
+</header>
+
+
+
+
+<div class="container">
+<h4>{{dataservice.message}}</h4>
+<h2>Sign up to ChatScrum</h2>
+<!---The form fields-->
+<form (ngSubmit)="createUser()">
+    <label class="lab" for="Email">Email</label>
+    <input type="email" name="email" [(ngModel)]="dataservice.createuser_email" name="email" placeholder="joshuaokwe@gmail.com"><br>
+    <label class="lab" for="Password" >Password</label>
+    <input type="Password" name="Password" [(ngModel)]="dataservice.createuser_password" name="password" placeholder="choose a password ..."><br>
+    <label class="lab" for="Full Name">Full Name</label>
+    <input type="text" name="FullName" [(ngModel)]="dataservice.createuser_fullname" name="full_name" placeholder="Full Name" placeholder="enter your full name ..."><br>
+    <label class="lab" for="Account Type">Account Type</label>
+    <div *ngIf="dataservice.createuser_usertype=='User'" class="acc-type" >
+        <span><button type="button"> User</button> </span> 
+        <span class="own" (click)="changeUserToOwner()">Owner</span>
+    </div>
+    <div *ngIf="dataservice.createuser_usertype=='Owner'" class="acc-type">
+        <span class="own" (click) ="changeOwnerToUser()">User</span><span>
+            <button type="button" >Owner</button>
+         </span>
+    </div>
+    <div *ngIf="dataservice.createuser_usertype=='Owner'">
+        <label  class="lab" for="Project Name">Project Name</label> 
+        <input  [(ngModel)]="dataservice.createuser_projname" 
+            value ="Create New Project" type="text" name="Project Name" 
+            placeholder="enter your project name ...">
+    </div>
+    <input  type="submit" value="Submit">
+</form>
+
+<p class="instr">By creating an account, you agree to our <span>Terms of Service</span> and <span>Privacy Policy.</span></p>   
+    
+</div>
+
+
+<footer>
+<div class="container-2">
+    <p class="chatscr">&copy;  Chatscrum 2019</p>
+    <p class="supp">Terms of use</p>   
+</div>
+<!---Desktop screen-->
+<div class="container-3">
+    <p class="chatscr-3">&copy;  Chatscrum 2019</p>
+    <p class="supp">Support<span>Terms of use</span></p>   
+</div>
+</footer>
+</div>

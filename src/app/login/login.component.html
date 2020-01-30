@@ -1,0 +1,40 @@
+<div class="general-body">
+<!-- NAVIGATION BAR -->
+<header>
+    <div class="container">
+       <!--The chatscrum logo at the left-->
+       <div class="header-left">
+           <img src="assets/image/chatscrumlogo.png" alt="ChatScrum logo" width="11.46%" height="4.11%">
+       </div>
+       <!--The login and signup link-->
+       <div class="header-right">
+           <!-- <li>LOGIN</li> -->
+           <button routerLink ="/signup"> SIGN UP</button>
+       </div>
+    </div>
+</header>
+
+<div class="body">
+        <h2 style="text-align: center; color:red;">{{dataservice.message_login}}</h2>
+    <p id="p1">Log in to ChatScrum</p>
+    <div>
+        <form (ngSubmit)="dataservice.login()">
+            <label class="lab" id="email" for="Email">Email</label><br>
+            <input type="email" id="input_em" [(ngModel)]="dataservice.login_username"  name="login_username" placeholder="joshuaokwe@gmail.com"><br>
+            <label class="lab" id="other_lab" for="Password" >Password</label><br>
+            <input type="Password" id="input_pass" [(ngModel)]="dataservice.login_password" name="login_password" name="Password" placeholder="enter password ..."><br>
+            <label class="lab" id="other_lab" for="Project Name">Project Name</label><br>
+            <input type="text" id="input_pro" [(ngModel)]="dataservice.login_project" name="login_project" name="Project Name" placeholder="enter project name ..."><br>
+            <input type="submit" class="submit" value="LOGIN"><p id="item1"><span><a href="{{dataservice.domain_protocol}}{{dataservice.domain_name}}/accounts/password_reset/" class="forget_password">Forgot Password? </a></span></p>
+        </form>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container-2">
+       <p class="chatscr">&copy;  Chatscrum 2019 <span class="supp">Support</span><span class="tou">Terms of use</span></p>
+       <!-- <p class="supp">Support <span>Terms of use</span></p> -->
+    </div>
+  </footer>
+</div>
